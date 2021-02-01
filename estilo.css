@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400&display=swap');
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#body {
+    background-color: Red;
+    background-image: url('fondo.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+
+.cabeceraWeb {
+    padding: 20px 19px 19px 25px;
+    margin-left: -5px;
+    margin-right: -5px;
+    background-color: #E60012;
+    border-block: 10px solid darkred;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonesListaInicio {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color: #E60012;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+    max-width: 240px;
+    margin: 1rem 0 0 1.5rem;
+}
+
+.botonesListaAcercaDe {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color: #E60012;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+    max-width: 240px;
+    margin: 1rem 0 0 1.5rem;
+}
+
+.botonesListaFavs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color: #E60012;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+    max-width: 240px;
+    margin: 1rem 0 0 1.5rem;
+}
+#select {
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color: #E60012;
+    border-radius: 3px;
+    border: 3px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+    max-width: 260px;
+    margin: 0 0 0 1.5rem;
+}
+
+.amiiboInfoDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.amiiboCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 5rem;
+    column-count: 2;
+}
+
+.amiiboCardFav{
+    background-image:url("blister2.png");
+    background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+ width:500px;
+}
+
+.amiiboInfoList {
+    list-style-type: none;
+    padding: 10rem 5rem 1.5rem 5rem;
+    text-align: center;
+}
+
+.amiiboInfoPicture {
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0 10rem 0;
+}
+
+.amiiboInfoPicture:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    animation: flash 1.5s;
+}
+
+.amiiboInfoCharacterName {
+    justify-content: center;
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #E60012;
+    border-radius: 3px;
+    border: 1px ridge #942911;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+}
+
+.amiiboInfoGameSeries {
+    justify-content: center;
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #E60012;
+    border-radius: 3px;
+    border: 1px ridge #942911;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+}
+
+.amiiboInfoName {
+    justify-content: center;
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #E60012;
+    border-radius: 3px;
+    border: 1px ridge #942911;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+}
+.amiiboInfoRelease{
+    justify-content: center;
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #E60012;
+    border-radius: 3px;
+    border: 1px ridge #942911;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
+    margin:0.5rem;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+}
+
+.tailId {
+    justify-content: center;
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #E60012;
+    border-radius: 3px;
+    border: 1px ridge #942911;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+    
+}
+.tailIdRem{
+    justify-content: center;
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #E60012;
+    border-radius: 3px;
+    border: 1px ridge #942911;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+}
+
+.amiiboInfoFavText {
+    display: inline-block;
+}
+
+
+.explicacionAmiibo {
+    padding: 6rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.footer {
+    padding: 20px 19px 19px 25px;
+    margin-left: -5px;
+    margin-right: -5px;
+    background-color: #E60012;
+    border-block: 10px solid darkred;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.imagenExp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+    #body{
+        display:block;
+        flex-direction:column;
+    }
+    .cabeceraWeb {
+        display: block;
+        text-align: center;
+    }
+    .botonesTexto {
+        text-align: center;
+    }
+    .amiiboCardContainer {
+        padding: 0;
+        text-align: center;
+    }
+    .amiiboInfoList {
+        display: block;
+    }
+    .footer {
+        display: block;
+        margin: 1rem;
+    }
+    .imagenExp {
+        display: block;
+        max-width: 170px;
+        max-height: 150px;
+    }
+    .amiiboCardFav{
+        display:block;
+        background-image:none;
+    }
+    .botonesListaInicio {
+        margin: 5px;
+    }
+    .botonesListaFavs {
+        margin: 5px;
+    }
+    .botonesListaAcercaDe {
+        margin: 5px;
+    }
+}

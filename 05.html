@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div id="imgContainer"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        let data;
+        axios.get('https://pokeapi.co/api/v2/type/')
+            .then(function (response) {
+                if (response.status !== 200) {
+                    alert("Pika?")
+                } else {
+                    data = response.data.results;
+                    let select = document.createElement("select");
+                    for (let type = 0; type < response.data.results.length; type++) {
+                        let option = document.createElement("option");
+                        option.value = response.data.results[type].name;
+                        option.innerHTML = response.data.results[type].name;
+                        select.appendChild(option);
+                    }
+                    document.getElementById("imgContainer").appendChild(select);
+                    select.addEventListener("change", function () {
+                        apiCall(this.value);
+                    })
+                }
+            })
+        function apiCall(pokemon) {
+            let pokeData;
+           
+            for(let i = 0; i < data.length; i++){
+                if(data[i].name === pokemon){
+                    axios.get(data[i].url)
+                        .then(function (response){
+                           pokeData =response.data.pokemon;
+                           for(let j = 0; j < pokeData.length; j++){
+                            console.log(pokeData[j].pokemon.name);
+                           }
+                        })
+                }
+            }
+        }
+    
+    </script>
+</body>
+
+</html>

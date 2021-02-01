@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Bootcamp & Dragons</title>
+</head>
+
+<body>
+    <header><p class = "draconis">Bootcamps & Dragons</p></header>
+    <div id="select"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        let data;
+        axios.get("https://www.dnd5eapi.co/api/")
+            .then(function (response) {
+                data = response.data;
+                console.log(data);
+                let select = document.createElement("select");
+                Object.keys(data).forEach(element => {
+                    console.log(element);
+                    let option = document.createElement("option");
+                    option.value = element;
+                    option.innerHTML = element;
+                    select.appendChild(option);
+                })
+                document.querySelector("#select").appendChild(select);
+                select.addEventListener("change", function() {
+                    apiCall(this.value);
+                })
+            })
+        
+            function apiCall(categoria) {
+                let dndCategoria;
+
+                for (let i = 0; i < data.length; i++){
+                    debugger
+                    if(data[i].element === categoria){
+                        axios.get(data[i])
+                        console.log(data)
+                    }
+                }
+
+            }
+    </script>
+</body>
+
+</html>
